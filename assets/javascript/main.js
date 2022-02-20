@@ -81,3 +81,21 @@ function myFunction() {
         navbar.classList.remove("sticky");
     }
 }
+
+// Scroll Top //
+
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if($(window).scrollTop()>300){
+        $('scrollButton').fadeIn(250);
+        }
+        else{
+        $('scrollButton').fadeOut(250);
+        }
+    });
+    $('scrollButton').click(function(){
+        $('html,body').animate(
+        {scrollTop:0},400
+        );
+    });
+});
