@@ -549,7 +549,8 @@ nav {
 
 @media (max-width: 991px) {
     .pace {
-        width: 50vw;
+        /* width: 50vw; */
+        display: none;
     }
     .list img:hover {
         transform: none;
