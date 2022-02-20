@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Icon -->
+    <link rel="icon" href="assets/img/icon.jpg">
+    <!-- Main -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>NGHI DEP TRY</title>
+</head>
+<body>
+    <div class="animation-area">
+		<ul class="box-area">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+    <main>
+        <div class="logo-rotate">
+            <img src="assets/img/icon.jpg" alt="">
+        </div>
+        <header>
+            <nav id="navbar">
+                <audio id="myAudio">
+                    <source src="assets/audio/Thi Thoi Lofi.mp3" type="audio/mpeg">
+                </audio>
+                <div class="music">
+                    <i class="fa fa-play" onclick="playAudio()"></i>
+                    <i class="fa fa-pause" onclick="pauseAudio()"></i>
+                    <i class="fa fa-step-backward"></i>
+                    <!-- <div class="music-wave">
+                        <span class="stroke"></span>
+                        <span class="stroke"></span>
+                        <span class="stroke"></span>
+                        <span class="stroke"></span>
+                        <span class="stroke"></span>
+                        <span class="stroke"></span>
+                        <span class="stroke"></span>
+                    </div> -->
+                </div>
+                <ul class="lists">
+                    <li class="list is-active">
+                        <a data-switcher data-tab="1" title="Home">
+                            <!-- <i class="fa fa-power-off"></i> -->
+                            <img src="assets/img/icon.jpg" alt="">
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a class="nav-about" data-switcher data-tab="2">
+                            About <i class="fa fa-arrow-circle-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="footer">
+            <div class="nav-footer">
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/147KhoiNghi" target="blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.twitter.com/@NDT147" target="blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.github.com/nghideptry" target="blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www..com/" target="blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                <div class="social-icon_mobile">
+                    <input type="checkbox" id="sichk">
+                    <label for="sichk" class="fa fa-share-alt">
+                        <div class="panel-icon">
+                            <a href="https://www.facebook.com/147KhoiNghi" target="blank">
+                                <i class="fab fa-facebook"></i><p>Facebook</p>
+                            </a>
+                            <a href="https://www.twitter.com/@NDT147" target="blank">
+                                <i class="fa fa-twitter"></i><p>Twitter</p>
+                            </a>
+                            <a href="https://www.github.com/nghideptry" target="blank">
+                                <i class="fa fa-github"></i><p>Github</p>
+                            </a>
+                            <a href="https://www..com" target="blank">
+                                <i class="fa fa-youtube"></i><p>Youtube</p>
+                            </a>
+                        </div>
+                    </label>
+                </div>
+                <div class="copyright">
+                    <p>&#169 Design by <span><a href="index.html">NghiDepTry</a></span></p>
+                </div>
+            </div>
+        </div>
+        <section class="pages">
+            <div class="page is-active" data-page="1">
+                <div class="home">
+                    <div class="blob">
+                        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color: url(assets/img/avatar-removebg-preview.png);"></stop>
+                                    <stop offset="100%" style="stop-color: #414345;"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#gradient)">
+                                <animate attributeName="d"
+                                        dur="10000ms"
+                                        repeatCount="indefinite"
+                                        values="M451.5,299Q420,348,383.5,383Q347,418,298.5,441.5Q250,465,198,447.5Q146,430,111,390Q76,350,44.5,300Q13,250,47.5,201.5Q82,153,111.5,107.5Q141,62,195.5,57Q250,52,297,69.5Q344,87,392.5,113.5Q441,140,462,195Q483,250,451.5,299Z;
+                                        M455.5,306Q444,362,400,398Q356,434,303,456.5Q250,479,202,448Q154,417,104,390Q54,363,48.5,306.5Q43,250,52,195.5Q61,141,99.5,98.5Q138,56,194,59.5Q250,63,308,56.5Q366,50,394.5,100Q423,150,445,200Q467,250,455.5,306Z;
+                                        M471,306.5Q445,363,401.5,400Q358,437,304,452.5Q250,468,203,440.5Q156,413,100.5,391Q45,369,52.5,309.5Q60,250,73.5,203Q87,156,123,124.5Q159,93,204.5,55.5Q250,18,311,28Q372,38,415,84Q458,130,477.5,190Q497,250,471,306.5Z;
+                                        M438,300Q422,350,385.5,386Q349,422,299.5,451Q250,480,193.5,462.5Q137,445,104,399Q71,353,39,301.5Q7,250,37.5,197.5Q68,145,97,89.5Q126,34,188,18.5Q250,3,300,40Q350,77,389,112Q428,147,441,198.5Q454,250,438,300Z;
+                                        M459.5,309.5Q456,369,402,394.5Q348,420,299,459Q250,498,198.5,463.5Q147,429,94.5,399.5Q42,370,40,310Q38,250,62.5,203Q87,156,119,117.5Q151,79,200.5,53.5Q250,28,312,31.5Q374,35,394.5,95Q415,155,439,202.5Q463,250,459.5,309.5Z;
+                                        M451.5,299Q420,348,383.5,383Q347,418,298.5,441.5Q250,465,198,447.5Q146,430,111,390Q76,350,44.5,300Q13,250,47.5,201.5Q82,153,111.5,107.5Q141,62,195.5,57Q250,52,297,69.5Q344,87,392.5,113.5Q441,140,462,195Q483,250,451.5,299Z">
+                                </animate>
+                                <!-- <img src="assets/img/avatar-removebg-preview.png" alt=""> -->
+                            </path>
+                        </svg>
+                    </div>
+                    <h1>Le Khoi Gia Nghi</h1>
+                    <h3>( NGHI DEP TRY )</h3>
+                </div>
+            </div>
+            <div class="page" data-page="2">
+                <div class="about">
+                    <div class="content">
+                        <div class="about-img">
+                            <img src="assets/img/icon.jpg" alt="About_IMG">
+                        </div>
+                        <br>
+                        <div class="paragraph">
+                            <h3>Le Khoi Gia Nghi & <span>Developer</span></h3>
+                            <br>
+                            <p>Hi, my name is Nghi. I am a website developer and a programmer for about 3 years. I have been interested in this industry since I was a kid and it is my biggest passion.<br>I'm currently in high school and I haven't fulfilled my programming dream yet, but I firmly believe that in the next few years with my passion, I will become a real programmer.</p>
+                        </div>
+                        <!-- <div class="haha">
+                            <img src="assets/img/avatar-removebg-preview.png" alt="">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="assets/javascript/particles.js"></script>
+    <script src="assets/javascript/app.js"></script>
+    <script src="assets/javascript/main.js"></script>
+</body>
+</html>
