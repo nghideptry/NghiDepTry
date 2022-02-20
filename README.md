@@ -14,3 +14,8 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+
+Hi Everybody, This is My Portfolio. It is My Copyright (Nghi Dep Try). 
+
+!!! Do Not REUP !!!
