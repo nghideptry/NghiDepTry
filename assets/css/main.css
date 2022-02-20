@@ -228,8 +228,13 @@ nav {
     text-shadow: 0 0 15px red;
 }
 
+.list.is-active .nav-about i {
+    display: none;
+}
+
 .nav-about {
     position: absolute;
+    top: 1rem;
     right: 1rem;
     font-size: 20px;
     color: white;
@@ -316,7 +321,7 @@ nav {
 }
 
 .nav-footer .copyright a {
-    font-family: 'Pacifico';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 900;
     letter-spacing: 2px;
@@ -327,15 +332,11 @@ nav {
     display: none;
 }
 
-
 .pages {
-    position: relative;
+    position: absolute;
     width: 100%;
-    height: 83vh;
+    height: 90vh;
     top: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .pages .page {
@@ -347,6 +348,10 @@ nav {
 }
 
 .home {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -384,7 +389,7 @@ nav {
     -webkit-background-clip: text;
     animation: rgb 10s linear infinite; */
     color: #fff;
-  text-shadow:
+    text-shadow:
     0 0 5px rgb(129, 129, 129),
     0 0 10px #fff,
     0 0 20px #fff,
@@ -411,25 +416,31 @@ nav {
 }
 
 .about {
-    position: relative;
-    top: 50px;
-    height: 1000vh;
+    height: 110vh;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .about-img img {
     width: 70vw;
     height: 30vw;
+    border: 3px solid grey;
 }
+
+/* .content {
+    border: 3px solid white;
+} */
 
 .content .paragraph {
     width: 70vw;
-    text-align: justify;
+    text-align: left;
     font-family: 'Poppins';
     color: white;
+    /* border: 3px solid grey; */
 }
 
 .content .paragraph h3 {
@@ -443,12 +454,33 @@ nav {
 .content .paragraph p {
     font-style: italic;
     font-family: 'Montserrat';
-    line-height: 1.5rem;
+    line-height: 1.7rem;
     color: rgb(202, 201, 201);
-    width: 35vw;
+    width: 37vw;
 }
 
+.content .paragraph .des {
+    display: flex;
+    gap: 1rem;
+}
 
+.content .paragraph .infor {
+    width: 35vw;
+    display: flex;
+}
+
+.content .paragraph .infor p {
+    display: flex;
+    line-height: 1.7rem;
+}
+
+.content .paragraph .infor b {
+    font-style: normal;
+    color: white;
+    font-size: 19px;
+    font-weight: 400;
+    width: 9vw;
+}
 
 @media (max-width: 991px) {
     .list img:hover {
@@ -502,11 +534,17 @@ nav {
     .content .paragraph h3 {
         letter-spacing: 0.5px;
     }
-    .about {
-        top: 0;
-    }
+    /* .about {
+        top: 10rem;
+    } */
     .about .paragraph p {
         width: 100%;
+    }
+    .about .des {
+        flex-direction: column;
+    }
+    .about .infor p {
+        flex-direction: column;
     }
 }
 
