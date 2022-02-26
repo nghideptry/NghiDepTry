@@ -156,6 +156,25 @@ main {
     bottom: 0;
 }
 
+.contact {
+    position: fixed;
+    bottom: 4rem;
+    right: 1rem;
+    z-index: 11;
+}
+
+.contact a {
+    font-family: 'Poppins';
+    font-size: 1.3rem;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.contact a:hover {
+    color: red;
+    text-shadow: 0 0 1rem red;
+}
+
 .logo-rotate {
     position: fixed;
     bottom: 4rem;
@@ -453,7 +472,8 @@ nav {
     position: absolute;
     width: 250px;
     height: 250px;
-    bottom: 16rem;
+    top: 0;
+    bottom: 0;
     border-radius: 50%;
     filter: contrast(70%);
 }
@@ -591,6 +611,81 @@ nav {
     box-shadow: 0 0 20px red;
 }
 
+.show-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    font-family: 'Montserrat';
+    color: white;
+    font-style: italic;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    z-index: 12;
+    background-color: white;
+    width: 90vw;
+    height: 90vh;
+    overflow-y: scroll;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+    font-size: 2vw;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 10px 15px;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    pointer-events: none;
+    z-index: 11;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
 @media (max-width: 991px) {
     .pace {
         /* width: 50vw; */

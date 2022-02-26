@@ -33,6 +33,9 @@
 		</ul>
 	</div>
     <main>
+        <div class="contact">
+            <a href="mailto: funnygamingtidi@gmail.com">Mail !</a>
+        </div>
         <!-- <div class="logo-rotate">
             <img src="assets/img/icon.jpg" alt="">
         </div> -->
@@ -109,9 +112,6 @@
                 <div class="copyright">
                     <p>&#169 Design by <span><a href="index.html">NghiDepTry</a></span></p>
                 </div>
-                <div id="scrollButton" class="scrollButton">
-                    <i class="fa fa-arrow-up" aria-hidden="true"></i>
-                </div>
             </div>
         </div>
         <section class="pages">
@@ -121,7 +121,7 @@
                         <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
                             <defs>
                                 <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                                    <stop offset="0%" style="stop-color: url(assets/img/avatar-removebg-preview.png);"></stop>
+                                    <stop offset="0%" style="stop-color: #767676;"></stop>
                                     <stop offset="100%" style="stop-color: #414345;"></stop>
                                 </linearGradient>
                             </defs>
@@ -136,7 +136,7 @@
                                         M459.5,309.5Q456,369,402,394.5Q348,420,299,459Q250,498,198.5,463.5Q147,429,94.5,399.5Q42,370,40,310Q38,250,62.5,203Q87,156,119,117.5Q151,79,200.5,53.5Q250,28,312,31.5Q374,35,394.5,95Q415,155,439,202.5Q463,250,459.5,309.5Z;
                                         M451.5,299Q420,348,383.5,383Q347,418,298.5,441.5Q250,465,198,447.5Q146,430,111,390Q76,350,44.5,300Q13,250,47.5,201.5Q82,153,111.5,107.5Q141,62,195.5,57Q250,52,297,69.5Q344,87,392.5,113.5Q441,140,462,195Q483,250,451.5,299Z">
                                 </animate>
-                                <!-- <img src="assets/img/avatar-removebg-preview.png" alt=""> -->
+                                <img src="assets/img/NghiDepTryDoiNon.png" alt="Nghi Dep Try">
                             </path>
                         </svg>
                     </div>
@@ -204,15 +204,25 @@
                             </div>
                             <br>
                             <div class="button">
-                                <div class="show-more btn">
-                                    <a href="#">Show More</a>
+                                <button class="show-more btn" data-modal-target="#modal">Show More</button>
+                                <div class="modal" id="modal">
+                                    <div class="modal-header">
+                                        <div class="title">About</div>
+                                        <button data-close-button class="close-button">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod alias ut illo doloremque eum ipsum obcaecati distinctio debitis reiciendis quae quia soluta totam doloribus quos nesciunt necessitatibus, consectetur quisquam accusamus ex, dolorum, dicta vel? Nostrum voluptatem totam, molestiae rem at ad autem dolor ex aperiam. Amet assumenda eos architecto, dolor placeat deserunt voluptatibus tenetur sint officiis perferendis atque! Voluptatem maxime eius eum dolorem dolor exercitationem quis iusto totam! Repudiandae nobis nesciunt sequi iure! Eligendi, eius libero. Ex, repellat sapiente!
+                                        <img src="assets/img/icon.jpg" alt="">
+                                    </div>
                                 </div>
-                                <div class="download btn">
-                                    <a href="#" download="">Download</a>
-                                </div>
+                                <div id="overlay"></div>
+                                <button class="download btn">
+                                    <a href="assets/img/icon.jpg" download>Download
+                                        <img src="assets/img/icon.jpg" hidden>
+                                    </a>
+                                </button>
                             </div>
                         </div>
-                        <!-- <img src="assets/img/icon.jpg" alt=""> -->
                     </div>
                 </div>
             </div>
