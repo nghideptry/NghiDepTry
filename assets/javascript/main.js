@@ -1,30 +1,33 @@
-// Loading //
+// Cursor //
 
-// paceOptions = {
-//     ajax: true,
-//     document: true,
-//     eventLag: false
-//     };
+let cursor1 = document.querySelector('.cursor');
+let cursor2 = document.querySelector('.cursor-dot');
 
-//     Pace.on('done', function() {
-//     $('.p').delay(500).animate({top: '30%', opacity: '0'}, 3000, $.bez([0.19,1,0.22,1]));
+window.onmousemove = (e) =>{
+    cursor1.style.top = e.pageY + 'px';
+    cursor1.style.left = e.pageX + 'px';
+}
 
+document.querySelectorAll('a, .music, .btn, .close-button').forEach(links =>{
 
-//     $('#preloader').delay(1500).animate({top: '-100%'}, 2000, $.bez([0.19,1,0.22,1]));
+    links.onmouseenter = () =>{
+        cursor1.classList.add('seenter');
+        cursor2.classList.add('seenter');
+    }
 
-//     TweenMax.from(".title", 2, {
-//             delay: 1.8,
-//                 y: 10,
-//                 opacity: 0,
-//                 ease: Expo.easeInOut
-//             })
-// });
+    links.onmouseleave = () =>{
+        cursor1.classList.remove('seenter');
+        cursor2.classList.remove('seenter');
+    }
+    document.addEventListener('click', () => {
+        cursor1.classList.add("click");
 
-// Theme //
-// function myFunction() {
-//     var element = document.body;
-//     element.classList.toggle("dark");
-// }
+        setTimeout(() => {
+            cursor1.classList.remove("click");
+        }, 200)
+    })
+
+});
 
 // Page Change //
 
