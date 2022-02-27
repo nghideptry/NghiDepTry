@@ -641,7 +641,7 @@ nav {
 }
 
 .modal-header .title {
-    font-size: 2vw;
+    font-size: 2rem;
     color: black;
     text-transform: uppercase;
     font-family: 'Montserrat';
@@ -653,7 +653,7 @@ nav {
     border: none;
     outline: none;
     background: none;
-    font-size: 2vw;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -687,23 +687,23 @@ nav {
 }
 
 .modal-body h3 {
-    font-size: 2vw;
+    font-size: 30px;
     padding: 0 0 1rem 0;
     font-family: 'Montserrat';
 }
 
 .modal-body h4 {
-    font-size: 1.3vw;
+    font-size: 20px;
     font-family: 'Montserrat';
 }
 
 .modal-body i {
-    font-size: 1vw;
+    font-size: 1rem;
     font-family: 'Poppins';
 }
 
 .modal-body b {
-    font-size: 1vw;
+    font-size: 1rem;
     font-family: 'Poppins';
 }
 
@@ -742,7 +742,7 @@ nav {
     border-radius: 50px;
     cursor: pointer;
     font-family: 'Poppins';
-    font-size: 1vw;
+    font-size: 1rem;
     word-wrap: break-word;
 }
 
@@ -827,7 +827,17 @@ nav {
     .about .infor p {
         flex-direction: column;
     }
-
+    .modal-body {
+        flex-direction: column;
+    }
+    .modal-body .education,
+    .modal-body .skills {
+        width: 100%;
+    }
+    .modal-body .generaly,
+    .program-lan, .graphics{
+        line-height: 3rem;
+    }
 }
 
 @media (max-width: 451px) {
