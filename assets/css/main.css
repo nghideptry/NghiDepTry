@@ -558,6 +558,8 @@ nav {
 
 .content .paragraph p a {
     color: red;
+    font-style: normal;
+    font-weight: bold;
 }
 
 .content .paragraph .des {
@@ -628,7 +630,7 @@ nav {
     transform: translate(-50%, -50%) scale(0);
     transition: 200ms ease-in-out;
     /* border: 1px solid black; */
-    border-radius: 10px;
+    /* border-radius: 10px; */
     z-index: 12;
     background-color: white;
     width: 90vw;
@@ -665,8 +667,15 @@ nav {
     font-weight: bold;
 }
 
+.modal-header .close-button:hover {
+    color: red;
+    text-shadow: 0 0 1rem red;
+}
+
 .modal-body {
+    display: flex;
     padding: 10px 15px;
+    color: black;
 }
 
 #overlay {
@@ -685,6 +694,51 @@ nav {
 #overlay.active {
     opacity: 1;
     pointer-events: all;
+}
+
+.modal-body h3 {
+    font-size: 2vw;
+    padding: 0 0 1rem 0;
+}
+
+.modal-body h4 {
+    font-size: 1.3vw;
+}
+
+.modal-body i {
+    font-size: 1vw;
+}
+
+.modal-body .education {
+    width: 50%;
+}
+
+.modal-body .skills {
+    width: 50%;
+}
+
+.modal-body .skills h3 {
+    padding-bottom: 0;
+}
+
+.modal-body .skills h4 {
+    padding: 1rem 0 1rem 0;
+}
+
+.modal-body .skills a {
+    padding: 7px 19px 7px 19px;
+    background: black;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-size: 1vw;
+    word-wrap: break-word;
+}
+
+.modal-body .skills a:hover {
+    background: red;
+    box-shadow: 0 0 1rem red;
 }
 @media (max-width: 991px) {
     .pace {
@@ -765,6 +819,7 @@ nav {
     .about .infor p {
         flex-direction: column;
     }
+
 }
 
 @media (max-width: 451px) {
